@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ethos Vector</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --navy:#0A2239;   /* Azul marino */
+      --teal:#00A8A8;   /* Teal principal */
+      --tealLite:#47D1D1;
+      --bg:#F5F7FA;
+      --white:#FFFFFF;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      color:var(--white); background:var(--navy);
+    }
+    header{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:16px 24px; background:rgba(10,34,57,.9); position:sticky; top:0;
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+    .brand{display:flex; align-items:center; gap:12px; font-weight:800; letter-spacing:.4px}
+    .brand img{height:32px; width:auto}
+    nav a{color:var(--white); text-decoration:none; margin-left:20px; opacity:.9}
+    nav a:hover{opacity:1}
+    .hero{
+      padding:96px 24px; text-align:center; background:
+        radial-gradient(60% 60% at 50% 0%, rgba(71,209,209,.1), transparent 60%),
+        var(--navy);
+    }
+    h1{font-size:40px; line-height:1.1; margin:0 0 16px}
+    .subtitle{font-size:18px; opacity:.9; max-width:720px; margin:0 auto 28px}
+    .cta{
+      display:inline-block; padding:14px 22px; border-radius:10px; font-weight:700;
+      background:var(--teal); color:var(--navy); text-decoration:none;
+    }
+    .cta:hover{background:var(--tealLite)}
+    .features{
+      background:var(--white); color:#0E1B2B; padding:48px 24px;
+      display:grid; gap:18px; grid-template-columns:repeat(auto-fit, minmax(240px,1fr));
+    }
+    .card{
+      background:var(--bg); border:1px solid #E8EDF3; border-radius:12px; padding:18px;
+    }
+    footer{
+      padding:28px 24px; background:#081A2C; color:rgba(255,255,255,.8); text-align:center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <!-- Sube tu logo como /logo.png en el repo y se mostrará -->
+      <img src="./logo.png" alt="Ethos Vector" />
+      <span>Ethos Vector</span>
+    </div>
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Impulsamos tu estrategia con tecnología y marketing digital</h1>
+    <p class="subtitle">Transformamos la visión en acción con soluciones ágiles, humanas y medibles.</p>
+    <a class="cta" href="https://wa.me/56XXXXXXXXX" target="_blank" rel="noreferrer">Conversemos por WhatsApp</a>
+  </section>
+
+  <section class="features" id="servicios">
+    <div class="card"><strong>Transformación tecnológica</strong><br/>ERP, analítica, IA y ciberseguridad aplicadas al negocio.</div>
+    <div class="card"><strong>Marketing digital 360°</strong><br/>SEO, SEM, campañas en redes, contenidos y analítica.</div>
+    <div class="card"><strong>Estrategia ágil</strong><br/>OKR y metodologías para foco y ejecución.</div>
+  </section>
+
+  <footer id="contacto">
+    © Ethos Vector · ethosvector.cl
+  </footer>
+</body>
+</html>
